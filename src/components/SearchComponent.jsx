@@ -23,7 +23,7 @@ export const SearchComponent = () => {
     if (searchText.trim().length <= 1) {
       navigate("/");
     }
-    navigate(`/?q=${searchText}`);
+    navigate(`search/?q=${searchText}`);
   };
 
   useEffect(() => {
