@@ -8,10 +8,10 @@ import { NotFound404 } from "../pages/NotFound404";
 export const AppRotuer = () => {
   return (
     <Routes>
-        <Route path="/phone_solutions/" element={<Plp />} />
-        <Route path="/phone_solutions/:id" element={<Pdp />} />
-        <Route path="/phone_solutions" element={<SearchPage />} />
-        <Route path="/phone_solutions/*" element={<NotFound404 />} />
+        <Route path="/" element={<Plp />} />
+        <Route path="/:id" element={<Pdp />} />
+        <Route path="/" element={<SearchPage />} />
+        <Route path="/*" element={<NotFound404 />} />
     </Routes>
   );
 };

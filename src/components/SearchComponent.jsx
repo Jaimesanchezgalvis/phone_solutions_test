@@ -21,20 +21,20 @@ export const SearchComponent = () => {
   const onSearchSubmit = (e) => {
     e.preventDefault();
     if (searchText.trim().length <= 1) {
-      navigate("/phone_solutions");
+      navigate("/");
     }
-    navigate(`/phone_solutions/?q=${searchText}`);
+    navigate(`/?q=${searchText}`);
   };
 
   useEffect(() => {
     if (searchText.trim().length >= 1) {
-      navigate(`/phone_solutions/?q=${searchText}`);
+      navigate(`/?q=${searchText}`);
     }
   }, [navigate, searchText]);
 
   const clearSearch = (e) => {
     e.preventDefault();
-    navigate("/phone_solutions");
+    navigate("/");
   };
 
   return (

@@ -17,7 +17,7 @@ export const NotFound404 = () => {
       <Grid.Container gap={2}>
         <HeaderComponent />
         <Grid sm={12} justify="center">
-          <Link to={"/phone_solutions"} css={{ textDecoration: "none" }}>
+          <Link to={"/"} css={{ textDecoration: "none" }}>
             <Card
               isPressable
               isHoverable
@@ -59,7 +59,7 @@ export const NotFound404 = () => {
                   <img src={home} alt="" />
                 </Row>
               </Card.Footer>
-              <Spacer y={1}/>
+              <Spacer y={1} />
             </Card>
           </Link>
         </Grid>
